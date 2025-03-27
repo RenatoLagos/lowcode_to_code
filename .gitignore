@@ -1,0 +1,16 @@
+extract_information
+process_files
+*.xml
+*.csv
+*.txt
+*.json
+*.xlsx
+*.xls
+xml_on_hard
+*.xml
+*.csv
+*.txt
+*.json
+*.xlsx
+*.xls
+
