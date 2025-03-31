@@ -132,7 +132,7 @@ def main():
     # Get input file from user or use default
     xml_file = input("Enter path to the schedule XML file (or press Enter to use default 'schedule.xml'): ")
     if not xml_file:
-        xml_file = "schedule.xml"
+        xml_file = "xml_on_hard/schedule.xml"
     
     if not os.path.exists(xml_file):
         print(f"Error: File '{xml_file}' not found")

@@ -104,7 +104,7 @@ if __name__ == "__main__":
     # Get input file from user or use default
     input_file = input("Enter path to the XML file (or press Enter to use default 'xml.xml'): ")
     if not input_file:
-        input_file = "xml.xml"
+        input_file = "xml_on_hard/xml.xml"
     
     # Process the file
     split_by_element(input_file) 

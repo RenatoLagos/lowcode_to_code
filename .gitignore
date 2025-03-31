@@ -13,4 +13,6 @@ xml_on_hard
 *.json
 *.xlsx
 *.xls
+info
+element_files
 
