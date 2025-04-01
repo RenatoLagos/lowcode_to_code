@@ -20,7 +20,7 @@ def get_schedule_info(xml_file):
         root = tree.getroot()
         print(f"Debug: XML Root tag: {root.tag}")
         
-        # Define namespaces - note the ns0 namespace from your XML
+        # Define namespaces
         namespaces = {
             'ns0': 'http://www.blueprism.co.uk/product/schedule'
         }
@@ -59,30 +59,6 @@ def get_schedule_info(xml_file):
     except Exception as e:
         print(f"Error processing schedule information for {xml_file}: {e}")
         return None
-
-def print_schedule_info(schedule_info):
-    """
-    Print schedule information in a formatted way
-    
-    Args:
-        schedule_info (dict): Dictionary containing schedule information
-    """
-    if not schedule_info:
-        print("No schedule information available")
-        return
-    
-    print("\n=== Schedule Information ===")
-    print(f"ID: {schedule_info['id']}")
-    print(f"Name: {schedule_info['name']}")
-    
-    if schedule_info['trigger_info']:
-        print("\n--- Trigger Information ---")
-        trigger = schedule_info['trigger_info']
-        print(f"Start Date: {trigger['start_date']}")
-        print(f"Priority: {trigger['priority']}")
-        print(f"Unit Type: {trigger['unit_type']}")
-        print(f"End Point: {trigger['end_point']}")
-        print(f"Calendar: {trigger['calendar']}")
 
 def process_schedule_folder(folder_path, output_csv):
     """
